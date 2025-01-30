@@ -146,6 +146,12 @@ def task_number_one():
             else:
                 print("Number of elements that are multiples of 3 is " + str(count))
             break
+        elif is_int(value) and int(value) % 3 == 0:
+            print("There is only one element and it is multiple of 3. The element is " + value)
+            break
+        elif is_int(value) and int(value) % 3 != 0:
+            print("There is only one element and it is not multiple of 3.")
+            break
         else: 
             print("Not proper array, try again.")  
 
